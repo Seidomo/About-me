@@ -1,7 +1,7 @@
 
 
 
-   'use strict'
+   /*'use strict'
 
     var userName= prompt("please enter your name?");
         //console.log('Greetings  ' + userName);
