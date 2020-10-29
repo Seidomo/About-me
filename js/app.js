@@ -1,7 +1,8 @@
 
 
 
-/*'use strict'
+'use strict'
+var correctAnswers= 0
 
 var userName= prompt("please enter your name?");
     //console.log('Greetings  ' + userName);
@@ -10,7 +11,8 @@ var userName= prompt("please enter your name?");
 var aboutVegan= prompt('Hi ' + userName + ' do you think i am a vegan? ');
     
 if(aboutVegan === 'no') {
-    //console.log('yap you got right'); 
+    //console.log('yap you got right');
+    correctAnswers++ 
     alert('yap you got right');
 }
 else if(aboutVegan .toLowerCase()=== 'yes'){
@@ -32,6 +34,7 @@ if( hairColor .toLowerCase() === 'yes'){
 }
 else if(hairColor .toLowerCase() === 'no'){
     //console.log ('You right its not please click ok to continue');
+    correctAnswers++ 
     alert ('You right its not please click ok to continue');
 }
 else{
@@ -44,6 +47,7 @@ var favoriteColor= prompt('Hi ' + userName + ' Do you think my favorite color is
 if( favoriteColor .toLowerCase() === 'yes'){
         //console.log('Applause '  + userName + ' you got it please click ok to continue');
         alert ('Applause '  + userName + ' you got it please click ok to continue');
+        correctAnswers++ 
 }
 else if (favoriteColor.toLowerCase() === 'no'){
     //console.log('Sorry no its Blue');
@@ -59,6 +63,7 @@ var favoriteTeam= prompt('Hi ' + userName + ' Is Seahawks my favorite team ?');
 if( favoriteTeam .toLowerCase() === 'yes'){
     //console.log('GO HAWKS you got it right');
     alert('GO HAWKS you got it right');
+    correctAnswers++ 
 }
 else if(favoriteTeam .toLowerCase() === 'no'){
     //console.log( 'No i am a SEAHAWKS fan');
@@ -73,6 +78,7 @@ var favoriteCity= prompt('Hi ' + userName + ' Do you think Portland is my favori
 if( favoriteCity .toUpperCase() === 'NO'){
 //console.log('yeaaaa its Seattle ' + userName + ' thanks for visiting my website');
     alert('yeaaaa its Seattle ' + userName + ' thanks for visiting my website');
+    correctAnswers++ 
 }
 else if(favoriteCity .toUpperCase() === 'YES'){
     //console.log('noooo its Seattle. ' + userName + ' thanks for visiting my website');
@@ -82,17 +88,18 @@ else if(favoriteCity .toUpperCase() === 'YES'){
 else{
 // console.log('please answer yes or no');
 alert('please answer yes or no');
-}*/
-var userName= prompt("please enter your name?");
+}
+var userName = prompt("please enter your name?");
 //console.log('Greetings  ' + userName);
-alert('Greetings  ' + userName);   
-var favoriteNumber= 9; 
+alert('Greetings  ' + userName);
+var favoriteNumber = 9;
 
-for(var i=0; i<6; i++){
+for(var i=0; i<3; i++){
      var guessingNumber= parseInt(prompt('Hey ' + userName + ' guess my favorite number?'));
 
 if(guessingNumber === favoriteNumber){
-    alert('Yeaaaaa that\'s right');
+    alert('Yeaaaaa that\'s right! Welcome to my site');
+    correctAnswers++ 
     break;
 }
 else if(guessingNumber > favoriteNumber){
@@ -101,12 +108,33 @@ else if(guessingNumber > favoriteNumber){
 else if(guessingNumber < favoriteNumber){
     alert('No that\'s too low please try again!');
 }
-else{alert('sorry you missed all your chances');}
+if (i===2){
+    alert('sorry you missed all your chances goodbye');
+}
+}
 
-    
-}  
+var animalsIlike = ['dog', 'cat', 'monkey', 'lama', 'parrot', 'squirell'];
 
+for (var i = 0; i < 6; i++) {
+    var favoriteAnimals = prompt('Hey ' + userName + ' what\'s my favorite animal?').toLowerCase();
+    var answerCorrect = false;
+    for (var j = 0; j < animalsIlike.length; j++) {
 
+        if (favoriteAnimals === animalsIlike[j]) {
+            answerCorrect = true;
+            correctAnswers++ 
+            break;
+        }
+    }
+    if (answerCorrect === true) {
+    alert(userName + ' you are right Welcome to my site.');
+    break;
+    } else { alert(userName + ' you wrong can you please try again?'); }
+    if (i === 5) {
+        alert('Sorry you missed your chances Goodbye');
+    }
 
+}
+alert('you got ' + correctAnswers +' amswers thank for visiting my site!')
 
 
