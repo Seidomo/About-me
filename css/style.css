@@ -1,16 +1,31 @@
 * { background-color: aqua;}
 
    h1{
-    font-size: 30px;
+    font-size: 70px;
     background-color: azure;
     text-align: center;
     border: blue; 
     margin: 10px;
     font-style: oblique;
 }
-
-
-p{
+.notes{
   font-style: italic;
+  color: brown;
+  font-size: 28px;
+  image-rendering: auto;
 
 }
+.experience{
+  font-size: 28px;
+}
+h3{
+  font-size: 37px;
+  text-underline-position: below;
+}
+.cities{
+
+  font-size:24px ;
+
+}
+
+

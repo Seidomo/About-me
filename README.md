@@ -9,4 +9,4 @@ figure out whats was missing "parseInt"
 - Sang helped me by being pai partner and i was happy 
 - working with him 
   after that i really had problem finishing the assignment so 
-  again with the help of NICCO i was able to Slove it
+  again with the help of NICCO i was able to Slove it.
