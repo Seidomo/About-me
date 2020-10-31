@@ -139,7 +139,8 @@ function aboutAnimalsilike() {
 
     }
 }
- araboutBeingvegan();
+ 
+aboutBeingvegan();
 aboutHaircolor();
 aboutFavoritecolor();
 aboutFavoriteteam();
