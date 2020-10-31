@@ -1,7 +1,7 @@
 
 'use strict'
 
-/*var correctAnswers = 0;
+var correctAnswers = 0;
 
 var userName = prompt("please enter your name?");
 
